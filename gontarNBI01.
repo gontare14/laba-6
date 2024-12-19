@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int power(int k, int n) {
+    int result = 1;
+    for (int i = 0; i < n; i++) {
+        result *= k;  
+    }
+    return result;
+}
+
+int main() {
+    int k, n;
+    
+    printf("Введите число k: ");
+    scanf("%d", &k);
+    printf("Введите показатель степени n: ");
+    scanf("%d", &n);
+
+    printf("%d в степени %d = %d\n", k, n, power(k, n));
+    
+    return 0;
+}
